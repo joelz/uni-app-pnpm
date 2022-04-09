@@ -3,16 +3,29 @@
         <image class="logo" src="../../static/logo.png"></image>
 		<view>
             <text class="title">{{title}}</text>
+			<text class="title">{{money}}</text>
         </view>
+		<kip-footer />
 	</view>
 </template>
 
 <script lang="ts">
-    import Vue from 'vue';
+	// 01-源码引用：使用包名引用
+	// 需要先在 root 中运行 pnpm --filter uni-app-pnpm-invoice install uni-app-pnpm-common
+    import KipFooter from 'uni-app-pnpm-common/src/components/kip-footer.vue';
+	import { formatMoneyThousand } from 'uni-app-pnpm-common/src/utils/';
+
+	// 02-源码引用：使用文件路径引用
+    // import KipFooter from '../../../../common/src/components/kip-footer.vue';
+	// import { formatMoneyThousand } from '../../../../common/src/utils/';
+
+	import Vue from 'vue';
 	export default Vue.extend({
+		components: { KipFooter },
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				money: formatMoneyThousand(100989)
 			}
 		},
 		onLoad() {

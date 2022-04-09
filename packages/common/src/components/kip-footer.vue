@@ -22,7 +22,7 @@ export default Vue.extend({
     getLangRes: function (
       key: string
     ) {
-      return formatPhoneNumber2('13800138000');
+      return formatPhoneNumber2('13800138001');
     },
   },
 });
@@ -34,12 +34,12 @@ export default Vue.extend({
   left: calc(50% - 52px);
   bottom: 15px;
   margin: 86px auto 0;
-  font-size: 7px;
+  font-size: 14px;
   text-align: center;
 
   .logo {
-    width: 29px;
-    height: 18px;
+    width: 100px;
+    height: 100px;
   }
 }
 </style>
