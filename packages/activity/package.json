@@ -72,6 +72,7 @@
     "node-simctl": "^6.1.0",
     "puppeteer": "^3.0.1",
     "regenerator-runtime": "^0.12.1",
+    "sass": "^1.50.0",
     "vue": "^2.6.11",
     "vue-class-component": "^6.3.2",
     "vue-property-decorator": "^8.0.0",
