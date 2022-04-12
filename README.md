@@ -1,13 +1,19 @@
 # uni-app-pnpm
 
+## 指南
 
-## Project setup
+### 安装依赖
+1. 首先安装 pnpm：`npm i -g pnpm@6`
+2. 在根目录执行 `pnpm install`
+
+### 运行 invoice 子项目
 ```
-pnpm install
+pnpm --filter uni-app-pnpm-invoice dev:h5
 ```
 
+### build invoice 子项目
 ```
-pnpm --filter uni-app-pnpm-activity dev:h5
+pnpm --filter uni-app-pnpm-invoice build:h5
 ```
 
 ## TODO
